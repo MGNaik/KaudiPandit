@@ -8,6 +8,6 @@ def test_board_init_empty():
         assert len(board.grid[r])== board_size 
         for c in range(board.size):
             assert board.get(r,c) is None
-
-print ("All tests passed!")
+            
+    print ("All tests passed!")
 
