@@ -1,0 +1,49 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="xMBQ60NugVQPDbsHrAbA">
+    <mxGraphModel dx="1661" dy="993" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="On-92ZS44zoGHrZw6vrb-1" parent="1" style="whiteSpace=wrap;html=1;aspect=fixed;" value="Kaudi" vertex="1">
+          <mxGeometry height="80" width="80" x="188" y="760" as="geometry" />
+        </mxCell>
+        <mxCell id="On-92ZS44zoGHrZw6vrb-9" edge="1" parent="1" source="On-92ZS44zoGHrZw6vrb-2" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="On-92ZS44zoGHrZw6vrb-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="On-92ZS44zoGHrZw6vrb-2" parent="1" style="whiteSpace=wrap;html=1;aspect=fixed;" value="KaudiSet" vertex="1">
+          <mxGeometry height="80" width="80" x="188" y="630" as="geometry" />
+        </mxCell>
+        <mxCell id="On-92ZS44zoGHrZw6vrb-8" edge="1" parent="1" source="On-92ZS44zoGHrZw6vrb-3" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="On-92ZS44zoGHrZw6vrb-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="On-92ZS44zoGHrZw6vrb-12" edge="1" parent="1" source="On-92ZS44zoGHrZw6vrb-3" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="On-92ZS44zoGHrZw6vrb-4" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="On-92ZS44zoGHrZw6vrb-13" edge="1" parent="1" source="On-92ZS44zoGHrZw6vrb-3" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="On-92ZS44zoGHrZw6vrb-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="On-92ZS44zoGHrZw6vrb-3" parent="1" style="whiteSpace=wrap;html=1;aspect=fixed;" value="Game" vertex="1">
+          <mxGeometry height="80" width="80" x="385" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="On-92ZS44zoGHrZw6vrb-10" edge="1" parent="1" source="On-92ZS44zoGHrZw6vrb-5" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="On-92ZS44zoGHrZw6vrb-6" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="On-92ZS44zoGHrZw6vrb-4" parent="1" style="whiteSpace=wrap;html=1;aspect=fixed;" value="Board" vertex="1">
+          <mxGeometry height="80" width="80" x="318" y="630" as="geometry" />
+        </mxCell>
+        <mxCell id="On-92ZS44zoGHrZw6vrb-11" edge="1" parent="1" source="On-92ZS44zoGHrZw6vrb-3" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="On-92ZS44zoGHrZw6vrb-7" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="On-92ZS44zoGHrZw6vrb-5" parent="1" style="whiteSpace=wrap;html=1;aspect=fixed;" value="Player" vertex="1">
+          <mxGeometry height="80" width="80" x="448" y="630" as="geometry" />
+        </mxCell>
+        <mxCell id="On-92ZS44zoGHrZw6vrb-6" parent="1" style="whiteSpace=wrap;html=1;aspect=fixed;" value="Piece" vertex="1">
+          <mxGeometry height="80" width="80" x="448" y="760" as="geometry" />
+        </mxCell>
+        <mxCell id="On-92ZS44zoGHrZw6vrb-7" parent="1" style="whiteSpace=wrap;html=1;aspect=fixed;" value="Strategy" vertex="1">
+          <mxGeometry height="80" width="80" x="578" y="630" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
