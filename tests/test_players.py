@@ -29,6 +29,14 @@ def test_player_has_6_pieces():
         assert piece.owner is player
     
      
-
+@pytest.mark.parametrize("pid", list(PlayerID))
+def test_player_paths(pid):
+    player = Player(pid)
+    print()
+    print(pid.name)
+    for square, nexts in player.path.items():
+        print(square, "->", nexts)
+        
+     
 
 

@@ -7,7 +7,22 @@ class Piece:
       self.position = owner.starting_square
 
     
+class PieceTuple:
 
+   #Properties:
+      #Set of Pieces in Tuple
+      #position
+      #state: Kachu/Paku
+      #id
+      #@size
+
+
+
+
+
+   
+
+   #Methods
 
 
 

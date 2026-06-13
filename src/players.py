@@ -78,6 +78,7 @@ class Player:
         self.pieces = []
         for i in range(6):
             self.pieces.append(Piece(self,i))
+            
         self.piece_tuples = []
 
         
