@@ -1,5 +1,5 @@
-from src.pieces import Piece
-from src.players import Player, PlayerID
+from docs.Rules.src.pieces import Piece
+from docs.Rules.src.players import Player, PlayerID
 import pytest
 
 @pytest.fixture

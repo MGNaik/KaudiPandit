@@ -1,5 +1,4 @@
 # Classes for piece and piece tuples
-
 class Piece: 
    def __init__(self,owner, id):
       self.owner = owner
@@ -8,26 +7,7 @@ class Piece:
 
     
 class PieceTuple:
-
-   #Properties:
-      #Set of Pieces in Tuple
-      #position
-      #state: Kachu/Paku
-      #id
-      #@size
-
-
-
-
-
-   
-
-   #Methods
-
-
-
-      
-
-
-
-
+   def __init__(self,owner,position,size):
+      self.owner = owner
+      self.position = position      
+      self.size = size

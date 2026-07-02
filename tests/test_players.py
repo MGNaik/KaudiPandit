@@ -1,6 +1,6 @@
-from src.players import PlayerID, Player
-from src.types import Position
-from src.pieces import Piece
+from docs.Rules.src.players import PlayerID, Player
+from docs.Rules.src.types import Position
+from docs.Rules.src.pieces import Piece
 import pytest
 
 @pytest.mark.parametrize("pid", list(PlayerID))

@@ -1,6 +1,6 @@
 from enum import Enum
-from src.types import Position, rotate_ccw, rotate_ccw_path
-from src.pieces import Piece
+from docs.Rules.src.types import Position, rotate_ccw, rotate_ccw_path
+from docs.Rules.src.pieces import Piece
 
 
 BOTTOM_PATH = {
