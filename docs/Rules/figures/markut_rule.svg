@@ -1,0 +1,23 @@
+<svg width="100%" viewBox="0 0 620 220" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    
+    <marker id="arr-red" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="#E24B4A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+    <marker id="arr-blue" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="#2A78D6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+    <marker id="arr-green" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="#008300" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+    <marker id="arr-gray" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="#a8a8a4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+    <marker id="arr-dark" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="#52514e" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+
+    <g id="piece-blue"><circle cx="0" cy="0" r="9" fill="white" stroke="#1C5CAB" stroke-width="1.2"/><path d="M 6,0 C 6,4 2,7 -2,5.5 C -6,4 -7,-1 -4,-4.5 C -1,-7 3,-7 5,-4.5 C 6.5,-2.5 6,0.5 4,2 C 2,3.5 0,3 0,0" fill="none" stroke="#2A78D6" stroke-width="1.6" stroke-linecap="round"/></g>
+  </defs>
+  <line x1="20" y1="140" x2="126" y2="140" stroke="#c3c2b7" stroke-width="2" stroke-dasharray="4,4"/><line x1="154" y1="140" x2="260" y2="140" stroke="#c3c2b7" stroke-width="2" stroke-dasharray="4,4"/><use href="#piece-blue" xlink:href="#piece-blue" x="140" y="140"/><line x1="140" y1="126" x2="140" y2="80" stroke="#a8a8a4" stroke-width="2.2" marker-end="url(#arr-gray)"/><circle cx="140" cy="100" r="16" fill="none" stroke="#c0392b" stroke-width="2.5"/><line x1="129" y1="89" x2="151" y2="111" stroke="#c0392b" stroke-width="2.5"/><text x="140" y="180" font-family="Arial, sans-serif" font-size="15" fill="#52514e" text-anchor="middle" >No kill yet: first arrow blocked</text><line x1="320" y1="140" x2="426" y2="140" stroke="#c3c2b7" stroke-width="2" stroke-dasharray="4,4"/><line x1="454" y1="140" x2="560" y2="140" stroke="#c3c2b7" stroke-width="2" stroke-dasharray="4,4"/><use href="#piece-blue" xlink:href="#piece-blue" x="440" y="140"/><line x1="440" y1="126" x2="440" y2="80" stroke="#E24B4A" stroke-width="2.2" marker-end="url(#arr-red)"/><text x="440" y="180" font-family="Arial, sans-serif" font-size="15" fill="#52514e" text-anchor="middle" >After first kill: unlocked for all pieces</text>
+</svg>

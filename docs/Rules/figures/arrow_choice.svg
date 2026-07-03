@@ -1,0 +1,23 @@
+<svg width="100%" viewBox="0 0 520 260" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    
+    <marker id="arr-red" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="#E24B4A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+    <marker id="arr-blue" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="#2A78D6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+    <marker id="arr-green" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="#008300" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+    <marker id="arr-gray" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="#a8a8a4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+    <marker id="arr-dark" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="#52514e" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+
+    <g id="piece-blue"><circle cx="0" cy="0" r="9" fill="white" stroke="#1C5CAB" stroke-width="1.2"/><path d="M 6,0 C 6,4 2,7 -2,5.5 C -6,4 -7,-1 -4,-4.5 C -1,-7 3,-7 5,-4.5 C 6.5,-2.5 6,0.5 4,2 C 2,3.5 0,3 0,0" fill="none" stroke="#2A78D6" stroke-width="1.6" stroke-linecap="round"/></g>
+  </defs>
+  <line x1="60" y1="140" x2="246" y2="140" stroke="#c3c2b7" stroke-width="2" stroke-dasharray="4,4"/><line x1="274" y1="140" x2="480" y2="140" stroke="#c3c2b7" stroke-width="2" stroke-dasharray="4,4"/><line x1="260" y1="126" x2="260" y2="70" stroke="#E24B4A" stroke-width="2.2" marker-end="url(#arr-red)"/><use href="#piece-blue" xlink:href="#piece-blue" x="260" y="140"/><text x="480" y="132" font-family="Arial, sans-serif" font-size="15" fill="#52514e" text-anchor="end" >may continue straight</text><text x="270" y="44" font-family="Arial, sans-serif" font-size="15" fill="#52514e" text-anchor="start" >may turn inward</text><text x="270" y="62" font-family="Arial, sans-serif" font-size="15" fill="#52514e" text-anchor="start" >(optional)</text>
+</svg>

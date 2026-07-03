@@ -51,10 +51,11 @@ Here are the terms I will use in this document, and their meanings and translati
 
   \item[Piece] Trans.(\guj{કૂકી}, \guj{કૂકડી}) - One of 6 movable objects belonging to one player.
 
-  \item[Tuple] Trans.(\guj{દૂગલું}, \guj{તિગલું}, \guj{ચૌગલું}, ...) - A player's own pieces stacked on the same square
-    and moving together as a unit.
+  \item[Tuple] A player's own pieces stacked on the same square and moving
+    together as a unit.
 
-  \item[Tuple Size] The number of pieces in a tuple. A \guj{દૂગલું} has size 2, a \guj{ચૌગલું} has size 4, etc.
+  \item[Tuple Size] The number of pieces in a tuple. A tuple of size $n$ is
+    called an $n$-tuple --- a 2-tuple has size 2, a 4-tuple has size 4, etc.
 
   \item[Kaudi] One of six cowrie shells thrown together to generate a move.
     Plural: \emph{kaudis}.
@@ -117,168 +118,275 @@ ring of the board. At the \textbf{first arrow}, it turns inward onto the
 first inner band and continues \textbf{clockwise} around that band. At the
 \textbf{second arrow}, it turns inward again onto the second inner band,
 still travelling clockwise. The \textbf{third and final arrow} then carries
-the piece onto the centre square, completing its journey.
+the piece onto the centre square, completing its journey. This is the
+full route; whether a piece must take each arrow or may skip it is covered
+in Rules 4 and 5 below.
 
 The objective of the game is to get all six pieces from the starting square to the centre square. The first player to do so wins.
 
 
 \section*{The rules}
 
-% Kaudi throw outcomes are based on the number of kaudis that end up mouth-up after the throw.
-% If no kaudis land mouth-up, the player gets an outcome of 12 squares.
-% Thus the possible outcomes of a throw are 1, 2, 3, 4, 5, 6 or 12 squares.
-% Svgs of 5, 6, and 12 kaudis mouth-up outcomes.
+\ruletitle{1}{Determining the first player}
 
-% Before the game begins, a round of kaudi throws is made to determine the first player.
-% First turn is given to the player that rolls the highest value on the kaudis
-% Turns are Anticlockwise from there. 
+Before play begins, every player throws their kaudis once. Whoever rolls the
+highest value goes first. Play then proceeds \textbf{anticlockwise} around
+the table from there.
 
-% A turn begins with a throw of the kaudis. 
-% Throwing an outcome of 6 or 12 allows the player to throw again while banking the prior value. 
-% However, if a player throws 6 or 12 three times in a row, they forfeit their turn.
+\emph{Example:} Red throws 4, Blue throws 6, Green throws 2, Yellow throws
+12. Yellow goes first (12 beats everything), then play continues
+anticlockwise from Yellow's seat.
 
-% The outcome of the throw(s) is then  used to move pieces around the board.
-% The player may move any one of their pieces by an equal number of squares. 
+\emph{Example:} Red throws 5, Blue throws 5, Green throws 6, Yellow throws 3.
+Green goes first with the single highest value, 6.
 
-% Multiple throw outcomes (e.g. 6 and 3) can be used to move a single or multiple pieces, in any combination.
-% However, individual throw values cannot be split between peices.
-% Example SVG
+% TODO(claude/M. Naik): this rule doesn't say what happens on a genuine tie
+% for highest (e.g. two players both throw 6). Options: re-throw among the
+% tied players only, or re-throw for everyone. Needs a decision.
 
-% Going around rules -  At each of these three arrows, the player may choose to follow the arrow and turn inward,  
-% or continue straight and stay on the current band for strategig reasons. 
+\ruletitle{2}{Throwing the kaudis}
 
-% Single Piece Kill Rules
-% Kills give additional throws.
-% Example SVGs
+A turn begins with a throw of all six kaudis. The value of a throw is the
+number of kaudis that land mouth-up, except that a throw with \textbf{no}
+kaudis mouth-up is worth \textbf{12} rather than 0. So a single throw is
+worth 1, 2, 3, 4, 5, 6, or 12.
 
-% Safe Squares kill avoidance rule
+A throw of 6 or 12 earns the player an extra throw, and the value of that
+extra throw is \textbf{banked} alongside the first. If a player throws 6 or
+12 three times in a row, they forfeit the rest of their turn --- none of the
+banked values may be used.
 
-% Markut rule
+\begin{center}
+  \includesvg[width=0.7\textwidth]{figures/kaudi_throw_examples}
+\end{center}
 
-% Tuple Forming (coexistance and then movement together)
-% Example SVGs
+\emph{Example:} A player throws 6 (a bonus), throws again and gets 4 --- since
+4 isn't 6 or 12, the turn stops there with two values banked to spend: 6 and
+4. A player who instead throws 6, then 12, then 6 has hit a bonus three
+times in a row and forfeits the whole turn --- none of those three values
+may be used.
 
-% Assignment of throws to tuples (divide rule)
-% Example SVG
+\ruletitle{3}{Using a throw to move}
 
-% Tuple Dissolving (from safe squares only)
+Each value produced during a turn moves one piece (or tuple) that many
+squares. If a turn produces more than one value, they may all be spent on a
+single piece (added together), or spread across several different pieces, in
+any combination the player chooses --- but a single value cannot be split
+between two pieces. A throw of 6 and 3 in the same turn, for example, can
+move one piece 9 squares in total, or two different pieces 6 and 3 squares
+each, but the 6 and the 3 can never themselves be divided further.
 
-% Kill Rules Generalised to Tuples
-% Enter Rules
-% Exit Rules
-% Also gives a single bonus throw.
-% Played out Pattern Examples
+\emph{Example:} A turn produces 6, 3, and 2 (three separate values). Legal
+ways to spend them include: one piece moves 11 (6+3+2); one piece moves 9
+(6+3) and a second piece moves 2; or three different pieces move 6, 3, and 2
+respectively. Not legal: splitting the 6 into a 4-and-2 to feed two pieces.
 
+\emph{Example:} A turn produces just one value, 12 (a zero-up throw). The
+whole 12 must go to a single piece (or tuple) --- there's nothing to spread,
+since there's only the one value.
 
-\ruletitle{1}{Landing on an opponent: equal or bigger kills}
+\ruletitle{4}{Turning at an arrow is optional}
+
+At each of the three arrows described above, a piece is not forced inward.
+Its owner may choose to follow the arrow onto the next band, or keep the
+piece moving straight ahead on its current band instead, for strategic
+reasons. (The first arrow carries one further condition --- see Rule 5.)
+
+\begin{center}
+  \includesvg[width=0.5\textwidth]{figures/arrow_choice_board}\\[1mm]
+  {\small Shown on the bottom player's path; the same three points apply,
+  rotated, for every player.}
+\end{center}
+
+\ruletitle{5}{The Markut rule: a kill is required to enter the first inner band}
+
+A player may not turn any piece inward at the \textbf{first} arrow until
+that player has killed at least one opposing piece or tuple, at any point
+earlier in the game. This is a one-off unlock, not a per-piece cost: once a
+player has made their first kill, \emph{all} of that player's pieces may
+enter the first inner band freely from then on. No kill is required to enter
+the second inner band or the centre --- the requirement applies only to the
+first arrow.
+
+\begin{center}
+  \includesvg[width=0.5\textwidth]{figures/markut_rule_board}\\[1mm]
+  {\small Arrow 1 is gated by this rule; arrows 2 and 3 (dashed rings) are not.}
+\end{center}
+
+\ruletitle{6}{Moving a tuple: the divide rule}
+
+A tuple of size $n$ can only be moved using a throw value that $n$ divides
+without remainder. A 2-tuple needs a throw of 2, 4, 6, or 12; a 4-tuple needs
+a throw of 4 or 12; a lone piece (a 1-tuple) can move on any throw, since 1
+divides everything. A throw value that doesn't divide evenly by a tuple's
+size simply cannot be used to move that tuple.
+
+\begin{center}
+\begin{tabular}{ll}
+\textbf{Tuple size} & \textbf{Usable throw values (out of 1,2,3,4,5,6,12)} \\
+\hline
+1-tuple (lone piece) & 1, 2, 3, 4, 5, 6, 12 --- any throw \\
+2-tuple & 2, 4, 6, 12 \\
+3-tuple & 3, 6, 12 \\
+4-tuple & 4, 12 \\
+5-tuple & 5 --- only an exact throw of 5 works \\
+6-tuple & 6, 12 \\
+\end{tabular}
+\end{center}
+
+\ruletitle{7}{Tuples form only when a player chooses to move pieces off together}
+
+When one of a player's pieces or tuples lands on a square already holding
+one or more of that \textbf{same} player's own pieces or tuples, nothing
+merges automatically --- they simply share the square as separate pieces,
+exactly as before. A tuple only forms at the moment its owner chooses to
+move two or more of them off that square \textbf{together}, as a single
+unit; forming and moving happen in the same action, and that move must obey
+the divide rule (Rule 6) for the combined size. If the pieces are instead
+moved off individually, or not moved together, no tuple forms.
+
+Once formed, a tuple moves, and is killed, together as one unit (see
+\emph{Tuple} in Terms used).
+
+This does not apply on a player's own \textbf{starting square}: pieces
+waiting there remain single pieces no matter how many share it, and can
+never be moved off together as a tuple from there. A tuple can only begin
+forming once a piece has left the starting square.
+
+\begin{center}
+  \includesvg[width=0.75\textwidth]{figures/tuple_forming}
+\end{center}
+
+% TODO(claude, for M. Naik to confirm): I've assumed tuple size is a plain
+% sum with no cap other than a player's own six pieces (i.e. two dugalu can
+% combine into a chogalu). Please confirm or correct.
+
+\ruletitle{8}{Tuples may only dissolve on a safe square}
+
+A tuple may split back into its individual pieces, but only while it
+occupies a safe square. Everywhere else on the board, a tuple must move and
+be killed as a single unit until it next dissolves.
+
+\begin{center}
+  \includesvg[width=0.75\textwidth]{figures/tuple_dissolve}
+\end{center}
+
+\ruletitle{9}{Landing on an opponent: equal or bigger kills}
 
 If your tuple lands on a square holding an opponent's tuple, and your tuple is
 the \textbf{same size or bigger}, the opponent's tuple is killed. Your tuple
 takes the square; their pieces go back to their start.
 
-% FIGURE: rule 1 -- before/after: Red 2 lands on Blue 2, Blue killed
-% \begin{center}
-%   \includesvg[width=0.75\textwidth]{rule1_landing_kill}
-% \end{center}
+\begin{center}
+  \includesvg[width=0.75\textwidth]{figures/rule1_landing_kill}
+\end{center}
 
 The same happens if the landing tuple is strictly bigger --- a Red~3 landing
 on a Blue~2 kills it just the same. Equal size is enough; the attacker never
 needs to outnumber the defender.
 
-\ruletitle{2}{Landing on an opponent: smaller coexists}
+\ruletitle{10}{Landing on an opponent: smaller coexists}
 
 If your tuple lands on a square holding an opponent's tuple and yours is
 \textbf{strictly smaller}, nothing is killed. Both tuples share the square.
 
-% FIGURE: rule 2 -- before/after: Red 1 lands on Blue 2, both share the square
-% \begin{center}
-%   \includesvg[width=0.75\textwidth]{rule2_coexist}
-% \end{center}
+\begin{center}
+  \includesvg[width=0.75\textwidth]{figures/rule2_coexist}
+\end{center}
 
 Notice what this means: whenever two opponents share a square, the tuple that
 was there first is always the bigger one. The smaller tuple is a guest on a
 stronger tuple's square.
 
-\ruletitle{3}{Leaving a shared square: the bigger tuple kills on exit}
+\ruletitle{11}{Leaving a shared square: the bigger tuple kills on exit}
 
 When two opponents share a square and the \textbf{strictly bigger} tuple moves
 away, it kills the smaller tuple as it leaves.
 
-% FIGURE: rule 3a -- before/after: Blue 3 departs shared square, Red 1 killed
-% \begin{center}
-%   \includesvg[width=0.75\textwidth]{rule3a_exit_kill}
-% \end{center}
+\begin{center}
+  \includesvg[width=0.75\textwidth]{figures/rule3a_exit_kill}
+\end{center}
 
 The reverse is free: if the \emph{smaller} tuple moves away first, no kill
 happens --- it simply escapes.
 
-% FIGURE: rule 3b -- before/after: Red 1 departs shared square, no kill
-% \begin{center}
-%   \includesvg[width=0.75\textwidth]{rule3b_escape}
-% \end{center}
+\begin{center}
+  \includesvg[width=0.75\textwidth]{figures/rule3b_escape}
+\end{center}
 
 So sharing a square is dangerous for the guest. The smaller tuple sits under
 threat until either it leaves, or the bigger tuple leaves and kills it on the
 way out.
 
-\ruletitle{4}{Safe squares: no kills, ever}
+\ruletitle{12}{Safe squares: no kills, ever}
 
 No kill of any kind can happen on a safe square. Any number of tuples, of any
 sizes, from any players, can share a safe square. Landing there kills nothing,
 and leaving a shared safe square kills nothing.
 
-% FIGURE: rule 4 -- before/after: Red 3 lands on Blue 2 on a safe square, no kill
-% \begin{center}
-%   \includesvg[width=0.75\textwidth]{rule4_safe_square}
-% \end{center}
+\begin{center}
+  \includesvg[width=0.75\textwidth]{figures/rule4_safe_square}
+\end{center}
 
-\ruletitle{5}{Three or more players on one square: settle each pair separately}
+\ruletitle{13}{Three or more players on one square: settle each pair separately}
 
 When a tuple lands on a square holding tuples from more than one opponent,
-apply Rules 1 and 2 to \textbf{each opponent separately}. The lander kills
+apply Rules 9 and 10 to \textbf{each opponent separately}. The lander kills
 every opponent tuple that is its size or smaller, and coexists with every
 opponent tuple that is bigger.
 
-% FIGURE: rule 5 -- before/after: Red 2 lands on square with Green 1 and Blue 3;
-% Green 1 killed (Red 2 >= Green 1), Blue 3 survives (Red 2 < Blue 3)
-% \begin{center}
-%   \includesvg[width=0.75\textwidth]{rule5_pairwise}
-% \end{center}
+\begin{center}
+  \includesvg[width=0.75\textwidth]{figures/rule5_pairwise}
+\end{center}
 
 Exit kills work the same way: a departing tuple kills every strictly smaller
 opponent tuple it leaves behind, and spares the rest.
 
+\ruletitle{14}{A kill earns a bonus throw}
+
+Making a kill --- landing on and killing an opponent (Rule 9), or killing on
+exit (Rule 11 or 13) --- earns the killer an immediate extra throw. Besides
+this and throwing 6 or 12 (Rule 2), nothing else grants a bonus throw.
+
+\ruletitle{15}{Reaching the centre: exact throw required (draft --- needs expansion)}
+
+Landing on the centre square requires an \textbf{exact} throw --- a piece may
+not overshoot it. A player is obliged to use a smaller throw value if one is
+available and would legally move a piece, but is not obliged to use a throw
+bigger than what's needed to land a piece on the centre exactly.
+
+% TODO(claude/M. Naik): this rule needs fleshing out before it's
+% unambiguous -- e.g. what happens to a throw value that no piece can
+% legally use (is it forfeit, or does it carry to another piece?), how this
+% interacts with several pieces simultaneously close to the centre, and
+% whether "obliged to use lesser throws" means a move must be made whenever
+% any legal move exists anywhere on the board (full mandatory play), or
+% only applies near the centre. Left as a stub per your note to expand this
+% later rather than guessing at the missing detail now.
+
 \section*{What follows from these rules}
 
-These are not extra rules --- they are consequences of Rules 1--5. I list them
-because they answer situations that caused arguments in the past.
+These are not extra rules --- they are consequences of Rules 9--13. I list
+them because they answer situations that caused arguments in the past.
 
 \begin{itemize}[leftmargin=2em]
   \item \textbf{Two opponent tuples of equal size can never share an ordinary
-    square.} Landing with equal size kills (Rule 1), so the situation can
+    square.} Landing with equal size kills (Rule 9), so the situation can
     never arise in the first place.
   \item \textbf{On a shared ordinary square, the resident is always bigger
     than the guest.} Coexistence only ever begins with a smaller tuple landing
-    on a bigger one (Rule 2).
+    on a bigger one (Rule 10).
   \item \textbf{Big tuples are strong but slow to threaten.} A size-3 tuple
     can only be killed by a size-3 or bigger landing on it --- but it also
     spends three pieces on one square.
   \item \textbf{A lone piece is never safe on an opponent's square.} As a
-    guest it can be killed the moment the resident moves (Rule 3).
+    guest it can be killed the moment the resident moves (Rule 11).
+  \item \textbf{A killed tuple's pieces return to the start as singles.}
+    Tuples can't exist on a starting square (Rule 7), so pieces sent back
+    after a kill are forced back into single pieces on arrival. This settles
+    what used to be an open question here: killed pieces always return as
+    singles, never as the tuple they were.
 \end{itemize}
-
-\section*{Questions for the family}
-
-\begin{enumerate}[leftmargin=2em]
-  \item \textbf{Does a kill earn an extra throw of the kaudis?} Some of us
-    remember playing with this, some without.
-  \item \textbf{Must a player make at least one kill before their pieces may
-    enter the inner rings?} Several Chowka Bhara variants play this way. Do
-    we?
-  \item \textbf{When killed pieces return to the start, do they return as
-    single pieces, or as the tuple they were?} My proposal: as single pieces
-    --- the tuple is destroyed, not relocated.
-\end{enumerate}
 
 Please mark up anything you disagree with, or reply with the version you
 remember. Once we agree, this becomes the reference for both the physical
