@@ -38,7 +38,7 @@
   \newcommand*\fsize{\dimexpr\f@size pt\relax}%
   \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{342.07500002bp}%
+    \setlength{\unitlength}{346.57500002bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -50,12 +50,12 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.24573147)%
+  \begin{picture}(1,0.24254085)%
     \lineheight{1}%
     \setlength\tabcolsep{0pt}%
-    \put(0.08879632,0.22034642){\color[rgb]{0.04313725,0.04313725,0.04313725}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Before\end{tabular}}}}%
+    \put(0.08764337,0.21748539){\color[rgb]{0.04313725,0.04313725,0.04313725}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Before\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{rule3b_escape_svg-tex.pdf}}%
-    \put(0.74654681,0.22034642){\color[rgb]{0.04313725,0.04313725,0.04313725}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}After\end{tabular}}}}%
+    \put(0.73685349,0.21748539){\color[rgb]{0.04313725,0.04313725,0.04313725}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}After\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=2]{rule3b_escape_svg-tex.pdf}}%
   \end{picture}%
 \endgroup%

@@ -38,7 +38,7 @@
   \newcommand*\fsize{\dimexpr\f@size pt\relax}%
   \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{485.22319338bp}%
+    \setlength{\unitlength}{427.39819336bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -50,22 +50,22 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.45221676)%
+  \begin{picture}(1,0.5133996)%
     \lineheight{1}%
     \setlength\tabcolsep{0pt}%
-    \put(-0.00098265,0.41886388){\color[rgb]{0.32156863,0.31764706,0.30588235}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Equal size\end{tabular}}}}%
-    \put(0.35452385,0.43432068){\color[rgb]{0.04313725,0.04313725,0.04313725}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Before\end{tabular}}}}%
+    \put(-0.0011156,0.47553422){\color[rgb]{0.32156863,0.31764706,0.30588235}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Equal size\end{tabular}}}}%
+    \put(0.40248929,0.49308226){\color[rgb]{0.04313725,0.04313725,0.04313725}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Before\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{rule1_landing_kill_svg-tex.pdf}}%
-    \put(0.81822798,0.43432068){\color[rgb]{0.04313725,0.04313725,0.04313725}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}After\end{tabular}}}}%
+    \put(0.92893044,0.49308226){\color[rgb]{0.04313725,0.04313725,0.04313725}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}After\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=2]{rule1_landing_kill_svg-tex.pdf}}%
-    \put(0.895512,0.35703666){\color[rgb]{0.65882353,0.65882353,0.64313725}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}HOME\end{tabular}}}}%
+    \put(0.84119025,0.40534207){\color[rgb]{0.65882353,0.65882353,0.64313725}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}KILLED\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=3]{rule1_landing_kill_svg-tex.pdf}}%
-    \put(-0.00098265,0.1406414){\color[rgb]{0.32156863,0.31764706,0.30588235}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Strictly bigger\end{tabular}}}}%
-    \put(0.35452385,0.1560982){\color[rgb]{0.04313725,0.04313725,0.04313725}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Before\end{tabular}}}}%
+    \put(-0.0011156,0.15966953){\color[rgb]{0.32156863,0.31764706,0.30588235}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Strictly bigger\end{tabular}}}}%
+    \put(0.40248929,0.17721757){\color[rgb]{0.04313725,0.04313725,0.04313725}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Before\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=4]{rule1_landing_kill_svg-tex.pdf}}%
-    \put(0.81822798,0.1560982){\color[rgb]{0.04313725,0.04313725,0.04313725}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}After\end{tabular}}}}%
+    \put(0.92893044,0.17721757){\color[rgb]{0.04313725,0.04313725,0.04313725}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}After\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=5]{rule1_landing_kill_svg-tex.pdf}}%
-    \put(0.895512,0.07881418){\color[rgb]{0.65882353,0.65882353,0.64313725}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}HOME\end{tabular}}}}%
+    \put(0.84119025,0.08947737){\color[rgb]{0.65882353,0.65882353,0.64313725}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}KILLED\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=6]{rule1_landing_kill_svg-tex.pdf}}%
   \end{picture}%
 \endgroup%

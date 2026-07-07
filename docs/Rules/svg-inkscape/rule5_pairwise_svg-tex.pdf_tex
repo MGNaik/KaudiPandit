@@ -38,7 +38,7 @@
   \newcommand*\fsize{\dimexpr\f@size pt\relax}%
   \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{475.47319338bp}%
+    \setlength{\unitlength}{427.01367188bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -50,20 +50,18 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.54047926)%
+  \begin{picture}(1,0.60181539)%
     \lineheight{1}%
     \setlength\tabcolsep{0pt}%
-    \put(-0.0010028,0.52447752){\color[rgb]{0.32156863,0.31764706,0.30588235}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Kills the smaller, spares the bigger\end{tabular}}}}%
-    \put(0.36179367,0.48977525){\color[rgb]{0.04313725,0.04313725,0.04313725}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Before\end{tabular}}}}%
+    \put(-0.0020171,0.58399769){\color[rgb]{0.32156863,0.31764706,0.30588235}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Lander bigger than both existing: still no kill\end{tabular}}}}%
+    \put(0.40195123,0.54535725){\color[rgb]{0.04313725,0.04313725,0.04313725}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Before\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{rule5_pairwise_svg-tex.pdf}}%
-    \put(0.83500647,0.48977525){\color[rgb]{0.04313725,0.04313725,0.04313725}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}After\end{tabular}}}}%
+    \put(0.92886645,0.54535725){\color[rgb]{0.04313725,0.04313725,0.04313725}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}After\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=2]{rule5_pairwise_svg-tex.pdf}}%
-    \put(0.91387527,0.36358517){\color[rgb]{0.65882353,0.65882353,0.64313725}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}HOME\end{tabular}}}}%
+    \put(-0.0020171,0.21515705){\color[rgb]{0.32156863,0.31764706,0.30588235}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Lander smaller than both: no kill either\end{tabular}}}}%
+    \put(0.40195123,0.1765166){\color[rgb]{0.04313725,0.04313725,0.04313725}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Before\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=3]{rule5_pairwise_svg-tex.pdf}}%
-    \put(-0.0010028,0.19322856){\color[rgb]{0.32156863,0.31764706,0.30588235}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Smaller than both: coexists with both\end{tabular}}}}%
-    \put(0.36179367,0.15852629){\color[rgb]{0.04313725,0.04313725,0.04313725}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Before\end{tabular}}}}%
+    \put(0.92886645,0.1765166){\color[rgb]{0.04313725,0.04313725,0.04313725}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}After\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=4]{rule5_pairwise_svg-tex.pdf}}%
-    \put(0.83500647,0.15852629){\color[rgb]{0.04313725,0.04313725,0.04313725}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}After\end{tabular}}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=5]{rule5_pairwise_svg-tex.pdf}}%
   \end{picture}%
 \endgroup%

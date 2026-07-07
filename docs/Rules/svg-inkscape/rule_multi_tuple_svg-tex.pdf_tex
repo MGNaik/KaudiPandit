@@ -1,0 +1,77 @@
+%% Creator: Inkscape 1.2.2 (b0a8486541, 2022-12-01), www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'rule_multi_tuple_svg-tex.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{427.07519531bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.61024696)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(-0.00187275,0.59370434){\color[rgb]{0.32156863,0.31764706,0.30588235}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Lander size 3: kills the 3-tuple (the largest one it can beat)\end{tabular}}}}%
+    \put(0.40203739,0.55506946){\color[rgb]{0.04313725,0.04313725,0.04313725}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Before\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{rule_multi_tuple_svg-tex.pdf}}%
+    \put(0.36691477,0.53048362){\color[rgb]{0.32156863,0.31764706,0.30588235}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}1-tuple\end{tabular}}}}%
+    \put(0.42662322,0.35487052){\color[rgb]{0.32156863,0.31764706,0.30588235}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}3-tuple\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{rule_multi_tuple_svg-tex.pdf}}%
+    \put(0.92887669,0.55506946){\color[rgb]{0.04313725,0.04313725,0.04313725}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}After\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{rule_multi_tuple_svg-tex.pdf}}%
+    \put(0.84107014,0.43916481){\color[rgb]{0.65882353,0.65882353,0.64313725}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}KILLED\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{rule_multi_tuple_svg-tex.pdf}}%
+    \put(-0.00187275,0.24247813){\color[rgb]{0.32156863,0.31764706,0.30588235}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Lander size 2: kills the 1-tuple instead (3-tuple ineligible)\end{tabular}}}}%
+    \put(0.40203739,0.20384325){\color[rgb]{0.04313725,0.04313725,0.04313725}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Before\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{rule_multi_tuple_svg-tex.pdf}}%
+    \put(0.36691477,0.17925742){\color[rgb]{0.32156863,0.31764706,0.30588235}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}1-tuple\end{tabular}}}}%
+    \put(0.42662322,0.00364431){\color[rgb]{0.32156863,0.31764706,0.30588235}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}3-tuple\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{rule_multi_tuple_svg-tex.pdf}}%
+    \put(0.92887669,0.20384325){\color[rgb]{0.04313725,0.04313725,0.04313725}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}After\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{rule_multi_tuple_svg-tex.pdf}}%
+    \put(0.84107014,0.0879386){\color[rgb]{0.65882353,0.65882353,0.64313725}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}KILLED\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=8]{rule_multi_tuple_svg-tex.pdf}}%
+  \end{picture}%
+\endgroup%

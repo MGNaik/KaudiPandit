@@ -38,7 +38,7 @@
   \newcommand*\fsize{\dimexpr\f@size pt\relax}%
   \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{350.32500002bp}%
+    \setlength{\unitlength}{345.07500002bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -50,14 +50,14 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.2465813)%
+  \begin{picture}(1,0.25467969)%
     \lineheight{1}%
     \setlength\tabcolsep{0pt}%
-    \put(0.0867052,0.22179405){\color[rgb]{0.04313725,0.04313725,0.04313725}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Before\end{tabular}}}}%
+    \put(0.08802434,0.22951532){\color[rgb]{0.04313725,0.04313725,0.04313725}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Before\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{rule3a_exit_kill_svg-tex.pdf}}%
-    \put(0.72896596,0.22179405){\color[rgb]{0.04313725,0.04313725,0.04313725}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}After\end{tabular}}}}%
+    \put(0.74005651,0.22951532){\color[rgb]{0.04313725,0.04313725,0.04313725}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}After\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=2]{rule3a_exit_kill_svg-tex.pdf}}%
-    \put(0.83600942,0.08049668){\color[rgb]{0.65882353,0.65882353,0.64313725}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}HOME\end{tabular}}}}%
+    \put(0.63138448,0.08172136){\color[rgb]{0.65882353,0.65882353,0.64313725}\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}KILLED\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=3]{rule3a_exit_kill_svg-tex.pdf}}%
   \end{picture}%
 \endgroup%

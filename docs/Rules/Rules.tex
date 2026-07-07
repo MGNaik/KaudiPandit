@@ -168,7 +168,7 @@ may be used.
 
 \ruletitle{3}{Using a throw to move}
 
-Each value produced during a turn moves one piece (or tuple) that many
+Each value produced during a turn moves one piece that many
 squares. If a turn produces more than one value, they may all be spent on a
 single piece (added together), or spread across several different pieces, in
 any combination the player chooses --- but a single value cannot be split
@@ -176,32 +176,24 @@ between two pieces. A throw of 6 and 3 in the same turn, for example, can
 move one piece 9 squares in total, or two different pieces 6 and 3 squares
 each, but the 6 and the 3 can never themselves be divided further.
 
-\emph{Example:} A turn produces 6, 3, and 2 (three separate values). Legal
-ways to spend them include: one piece moves 11 (6+3+2); one piece moves 9
-(6+3) and a second piece moves 2; or three different pieces move 6, 3, and 2
-respectively. Not legal: splitting the 6 into a 4-and-2 to feed two pieces.
+\emph{Example:} A player throws 6 (a bonus, so they throw again), then 12
+(another bonus, so they throw once more), then 4 --- not a 6 or 12, so the
+turn stops there with three values banked: 6, 12, and 4. Legal ways to
+spend them include: one piece moves 22 (6+12+4); one piece moves 18
+(6+12) and a second piece moves 4; or three different pieces move 6, 12,
+and 4 respectively. Not legal: splitting the 6 into a 4-and-2 to feed two
+pieces.
 
-\emph{Example:} A turn produces just one value, 12 (a zero-up throw). The
-whole 12 must go to a single piece (or tuple) --- there's nothing to spread,
-since there's only the one value.
+\emph{Example:} A player throws 5 on their first throw. Since 5 is neither
+6 nor 12, no bonus throw follows --- the turn produces just that one value.
+The whole 5 must go to a single piece; there's nothing to spread, since
+there's only the one value.
 
-\ruletitle{4}{Turning at an arrow is optional}
-
-At each of the three arrows described above, a piece is not forced inward.
-Its owner may choose to follow the arrow onto the next band, or keep the
-piece moving straight ahead on its current band instead, for strategic
-reasons. (The first arrow carries one further condition --- see Rule 5.)
-
-\begin{center}
-  \includesvg[width=0.5\textwidth]{figures/arrow_choice_board}\\[1mm]
-  {\small Shown on the bottom player's path; the same three points apply,
-  rotated, for every player.}
-\end{center}
-
-\ruletitle{5}{The Markut rule: a kill is required to enter the first inner band}
+\newpage
+\ruletitle{4}{The Markut rule: a kill is required to enter the first inner band}
 
 A player may not turn any piece inward at the \textbf{first} arrow until
-that player has killed at least one opposing piece or tuple, at any point
+that player has killed at least one opposing piece, at any point
 earlier in the game. This is a one-off unlock, not a per-piece cost: once a
 player has made their first kill, \emph{all} of that player's pieces may
 enter the first inner band freely from then on. No kill is required to enter
@@ -209,8 +201,21 @@ the second inner band or the centre --- the requirement applies only to the
 first arrow.
 
 \begin{center}
-  \includesvg[width=0.5\textwidth]{figures/markut_rule_board}\\[1mm]
+  \includesvg[width=0.38\textwidth]{figures/markut_rule_board}\\[1mm]
   {\small Arrow 1 is gated by this rule; arrows 2 and 3 (dashed rings) are not.}
+\end{center}
+
+\ruletitle{5}{Turning at an arrow is optional}
+
+At each of the three arrows described above, a piece is not forced inward.
+Its owner may choose to follow the arrow onto the next band, or keep the
+piece moving straight ahead on its current band instead, for strategic
+reasons. (The first arrow carries one further condition --- see Rule 4.)
+
+\begin{center}
+  \includesvg[width=0.38\textwidth]{figures/arrow_choice_board}\\[1mm]
+  {\small Shown on the bottom player's path; the same three points apply,
+  rotated, for every player.}
 \end{center}
 
 \ruletitle{6}{Moving a tuple: the divide rule}
@@ -263,14 +268,17 @@ forming once a piece has left the starting square.
 
 \ruletitle{8}{Tuples may only dissolve on a safe square}
 
-A tuple may split back into its individual pieces, but only while it
-occupies a safe square. Everywhere else on the board, a tuple must move and
-be killed as a single unit until it next dissolves.
+A tuple may split, but only while it occupies a safe square. The split need
+not go all the way down to single pieces --- a tuple may divide into any
+combination of smaller tuples and pieces, with some parts leaving the square
+and others staying behind. Everywhere else on the board, a tuple must move
+and be killed as a single unit until it next reaches a safe square.
 
 \begin{center}
   \includesvg[width=0.75\textwidth]{figures/tuple_dissolve}
 \end{center}
 
+\newpage
 \ruletitle{9}{Landing on an opponent: equal or bigger kills}
 
 If your tuple lands on a square holding an opponent's tuple, and your tuple is
@@ -282,8 +290,7 @@ takes the square; their pieces go back to their start.
 \end{center}
 
 The same happens if the landing tuple is strictly bigger --- a Red~3 landing
-on a Blue~2 kills it just the same. Equal size is enough; the attacker never
-needs to outnumber the defender.
+on a Blue~2 kills it just the same.
 
 \ruletitle{10}{Landing on an opponent: smaller coexists}
 
@@ -301,24 +308,68 @@ stronger tuple's square.
 \ruletitle{11}{Leaving a shared square: the bigger tuple kills on exit}
 
 When two opponents share a square and the \textbf{strictly bigger} tuple moves
-away, it kills the smaller tuple as it leaves.
+away, it kills the smaller tuple as it leaves. (This rule is for exactly two
+parties sharing a square, each with a single tuple --- see Rule 13 if that
+one opponent has multiple separate tuples there instead, or Rule 15 when a
+third or later opponent is involved.)
 
 \begin{center}
   \includesvg[width=0.75\textwidth]{figures/rule3a_exit_kill}
 \end{center}
 
-The reverse is free: if the \emph{smaller} tuple moves away first, no kill
+The reverse is safe: if the \emph{smaller} tuple moves away first, no kill
 happens --- it simply escapes.
 
 \begin{center}
   \includesvg[width=0.75\textwidth]{figures/rule3b_escape}
 \end{center}
 
-So sharing a square is dangerous for the guest. The smaller tuple sits under
+The smaller tuple sits under
 threat until either it leaves, or the bigger tuple leaves and kills it on the
 way out.
 
-\ruletitle{12}{Safe squares: no kills, ever}
+\ruletitle{12}{Landing on an opponent with multiple separate tuples: the largest one you can beat dies}
+
+An opponent can have more than one of their own tuples sitting on the same
+square without them being merged (see Rule 7) --- for example a 1-tuple and
+a 3-tuple side by side, never moved together. When your tuple lands on that
+square, look at all of their tuples that are of \textbf{equal or lesser
+size} than yours --- the ones you're big enough to beat --- and kill only
+the \textbf{largest} of those. Every other tuple of theirs is safe: any of
+theirs smaller than the one you killed are spared, and any of theirs bigger
+than yours were never at risk to begin with.
+
+\begin{center}
+  \includesvg[width=0.75\textwidth]{figures/rule_multi_tuple}
+\end{center}
+
+This is still a \textbf{two-player} interaction --- one opponent owning
+several tuples, not several different opponents (Rule 15 covers that case).
+This rule is specifically about \textbf{landing} --- see Rule 13 for what
+happens when someone leaves a square like this instead.
+
+\ruletitle{13}{Leaving a square where multiple tuples remain: the same largest-you-can-beat logic}
+
+When a tuple leaves a square, it can kill the \textbf{largest} of the
+\textbf{opposing} tuples left behind (belonging to a different player) that
+is \textbf{strictly smaller} than the leaving tuple --- matching Rule 11,
+where only a \emph{strictly bigger} tuple kills on exit (a tie never
+kills). Every opposing tuple that's the same size as the leaver or bigger
+is safe, and any opposing tuple smaller than the one killed is spared too.
+This applies no matter \textbf{which} tuple leaves --- yours, or one of an
+opponent's own separate tuples --- and no matter how many tuples are left
+behind.
+
+This is a generalisation of Rule 11, not a separate mechanic: with only one
+tuple left behind, ``the largest remaining tuple strictly smaller than the
+leaver'' is just that one tuple if it qualifies, so Rule 11 is the
+two-tuple special case of this rule.
+
+\begin{center}
+  \includesvg[width=0.75\textwidth]{figures/rule_multi_tuple_leaving}
+\end{center}
+
+\ruletitle{14}{Safe squares: no kills, ever}
 
 No kill of any kind can happen on a safe square. Any number of tuples, of any
 sizes, from any players, can share a safe square. Landing there kills nothing,
@@ -328,27 +379,41 @@ and leaving a shared safe square kills nothing.
   \includesvg[width=0.75\textwidth]{figures/rule4_safe_square}
 \end{center}
 
-\ruletitle{13}{Three or more players on one square: settle each pair separately}
+\ruletitle{15}{Three or more players on one square: no kills at all, landing or leaving}
 
-When a tuple lands on a square holding tuples from more than one opponent,
-apply Rules 9 and 10 to \textbf{each opponent separately}. The lander kills
-every opponent tuple that is its size or smaller, and coexists with every
-opponent tuple that is bigger.
+Rules 9--13 are only for a square shared by exactly \textbf{one}
+opponent (whether that opponent has one tuple there or several unmerged
+ones). Once a square already holds tuples from \textbf{two or more
+different} opponents, everything changes, for \textbf{both landing and
+leaving}: \textbf{no kill can happen there, regardless of size}, in either
+direction.
+
+\textbf{Landing:} a tuple landing on such a square simply joins the pile, no
+matter how big or small it is compared to what's already there.
 
 \begin{center}
   \includesvg[width=0.75\textwidth]{figures/rule5_pairwise}
 \end{center}
 
-Exit kills work the same way: a departing tuple kills every strictly smaller
-opponent tuple it leaves behind, and spares the rest.
+\textbf{Leaving:} if a tuple currently shares a square with \textbf{two or
+more} other opponents' tuples and moves away, it kills nobody on exit
+either. Exit kills (Rule 11) only ever happen when exactly one opponent's
+tuple is present.
 
-\ruletitle{14}{A kill earns a bonus throw}
+\ruletitle{16}{A kill earns a bonus throw}
 
-Making a kill --- landing on and killing an opponent (Rule 9), or killing on
-exit (Rule 11 or 13) --- earns the killer an immediate extra throw. Besides
-this and throwing 6 or 12 (Rule 2), nothing else grants a bonus throw.
+Making a kill --- landing on and killing an opponent (Rule 9 or 12), or
+killing on exit (Rule 11) --- earns the killer an immediate extra throw.
+Besides this and throwing 6 or 12 (Rule 2), nothing else grants a bonus
+throw.
 
-\ruletitle{15}{Reaching the centre: exact throw required (draft --- needs expansion)}
+A bonus throw earned from a kill does \textbf{not} count towards the limit
+in Rule 2 of forfeiting after rolling 6 or 12 three times in a row --- that
+limit is only about consecutive 6s and 12s \emph{from the kaudis
+themselves}. A kill's bonus throw doesn't reset or extend that count either
+way.
+
+\ruletitle{17}{Reaching the centre: exact throw required (draft --- needs expansion)}
 
 Landing on the centre square requires an \textbf{exact} throw --- a piece may
 not overshoot it. A player is obliged to use a smaller throw value if one is
@@ -366,21 +431,28 @@ bigger than what's needed to land a piece on the centre exactly.
 
 \section*{What follows from these rules}
 
-These are not extra rules --- they are consequences of Rules 9--13. I list
+These are not extra rules --- they are consequences of Rules 9--15. I list
 them because they answer situations that caused arguments in the past.
 
 \begin{itemize}[leftmargin=2em]
   \item \textbf{Two opponent tuples of equal size can never share an ordinary
     square.} Landing with equal size kills (Rule 9), so the situation can
     never arise in the first place.
-  \item \textbf{On a shared ordinary square, the resident is always bigger
-    than the guest.} Coexistence only ever begins with a smaller tuple landing
-    on a bigger one (Rule 10).
+  \item \textbf{On an ordinary square shared by exactly one opponent, the
+    resident is always bigger than the guest.} Coexistence only ever begins
+    with a smaller tuple landing on a bigger one (Rule 10). This stops
+    holding once a third opponent's tuple joins the same square --- Rule 15
+    then blocks kills entirely, so a resident can end up smaller than a later
+    guest without dying.
   \item \textbf{Big tuples are strong but slow to threaten.} A size-3 tuple
     can only be killed by a size-3 or bigger landing on it --- but it also
     spends three pieces on one square.
-  \item \textbf{A lone piece is never safe on an opponent's square.} As a
-    guest it can be killed the moment the resident moves (Rule 11).
+  \item \textbf{A lone piece is safe the moment a third opponent joins its
+    square.} While exactly one opponent shares a square, a lone guest can be
+    killed the moment the resident moves (Rule 11). But once a second
+    opponent's tuple also lands there, Rule 15 takes over and nobody there
+    can be killed on exit either, until the square is back down to one
+    opponent.
   \item \textbf{A killed tuple's pieces return to the start as singles.}
     Tuples can't exist on a starting square (Rule 7), so pieces sent back
     after a kill are forced back into single pieces on arrival. This settles
