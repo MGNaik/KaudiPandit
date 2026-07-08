@@ -38,7 +38,7 @@
   \newcommand*\fsize{\dimexpr\f@size pt\relax}%
   \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{496.72595215bp}%
+    \setlength{\unitlength}{492.00366211bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -50,32 +50,24 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,1.10494488)%
+  \begin{picture}(1,1.11555023)%
     \lineheight{1}%
     \setlength\tabcolsep{0pt}%
-    \put(0.0052846,1.09072186){\color[rgb]{0.32156863,0.31764706,0.30588235}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}An exact throw lands the piece on the centre\end{tabular}}}}%
-    \put(0.23176764,1.04542526){\color[rgb]{0.04313725,0.04313725,0.04313725}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Before\end{tabular}}}}%
+    \put(-0.00003424,1.1011907){\color[rgb]{0.32156863,0.31764706,0.30588235}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}An exact throw lands the piece on the centre --- and off the board\end{tabular}}}}%
+    \put(0.2286226,1.05545933){\color[rgb]{0.04313725,0.04313725,0.04313725}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Before\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{rule_centre_exact_svg-tex.pdf}}%
-    \put(0.4431518,0.72230946){\color[rgb]{0.32156863,0.31764706,0.30588235}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}2\end{tabular}}}}%
-    \put(0.73003031,1.04542526){\color[rgb]{0.04313725,0.04313725,0.04313725}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}After\end{tabular}}}}%
+    \put(0.73166763,1.05545933){\color[rgb]{0.04313725,0.04313725,0.04313725}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}After\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=2]{rule_centre_exact_svg-tex.pdf}}%
-    \put(0.97161221,0.901986){\color[rgb]{0.16470588,0.47058824,0.83921569}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}2\end{tabular}}}}%
-    \put(0.97161221,1.04542526){\color[rgb]{0.32156863,0.31764706,0.30588235}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}This turn\end{tabular}}}}%
-    \put(0.0052846,0.61661738){\color[rgb]{0.32156863,0.31764706,0.30588235}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}This turn produced 2 (not a 6 or 12, so no bonus throw follows). The piece is exactly\end{tabular}}}}%
-    \put(0.0052846,0.59245919){\color[rgb]{0.32156863,0.31764706,0.30588235}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}2 away, so the 2 lands it precisely on the centre.\end{tabular}}}}%
-    \put(0.0052846,0.50186598){\color[rgb]{0.32156863,0.31764706,0.30588235}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Two pieces close enough: the player chooses which value goes where\end{tabular}}}}%
-    \put(0.23176764,0.45656937){\color[rgb]{0.04313725,0.04313725,0.04313725}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Before\end{tabular}}}}%
+    \put(0.97556826,0.82375374){\color[rgb]{0.32156863,0.31764706,0.30588235}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}HOME\end{tabular}}}}%
+    \put(-0.00003424,0.62253572){\color[rgb]{0.32156863,0.31764706,0.30588235}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}This turn produced 2 (not a 6 or 12, so no bonus throw follows). The piece is exactly\end{tabular}}}}%
+    \put(-0.00003424,0.59814566){\color[rgb]{0.32156863,0.31764706,0.30588235}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}2 away, so the 2 lands it precisely on the centre, taking it off the board for good.\end{tabular}}}}%
+    \put(-0.00003424,0.50668293){\color[rgb]{0.32156863,0.31764706,0.30588235}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Two pieces close enough: the player chooses which value goes where\end{tabular}}}}%
+    \put(0.2286226,0.46095156){\color[rgb]{0.04313725,0.04313725,0.04313725}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Before\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=3]{rule_centre_exact_svg-tex.pdf}}%
-    \put(0.4431518,0.13345358){\color[rgb]{0.32156863,0.31764706,0.30588235}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}2\end{tabular}}}}%
+    \put(0.73166763,0.46095156){\color[rgb]{0.04313725,0.04313725,0.04313725}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}After\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=4]{rule_centre_exact_svg-tex.pdf}}%
-    \put(0.02038347,0.37503548){\color[rgb]{0.32156863,0.31764706,0.30588235}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}6\end{tabular}}}}%
-    \put(0.73003031,0.45656937){\color[rgb]{0.04313725,0.04313725,0.04313725}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}After\end{tabular}}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=5]{rule_centre_exact_svg-tex.pdf}}%
-    \put(0.97161221,0.31313012){\color[rgb]{0.16470588,0.47058824,0.83921569}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}6\end{tabular}}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=6]{rule_centre_exact_svg-tex.pdf}}%
-    \put(0.97161221,0.25877419){\color[rgb]{0.16470588,0.47058824,0.83921569}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}2\end{tabular}}}}%
-    \put(0.97161221,0.45656937){\color[rgb]{0.32156863,0.31764706,0.30588235}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}This turn\end{tabular}}}}%
-    \put(0.0052846,0.0277615){\color[rgb]{0.32156863,0.31764706,0.30588235}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}A throw of 6 earns a bonus throw of 2, so this turn produced 6 and 2 --- and both land a\end{tabular}}}}%
-    \put(0.0052846,0.00360331){\color[rgb]{0.32156863,0.31764706,0.30588235}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}piece exactly on the centre. The player is free to assign either value to either piece.\end{tabular}}}}%
+    \put(0.97556826,0.19875839){\color[rgb]{0.32156863,0.31764706,0.30588235}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}HOME\end{tabular}}}}%
+    \put(-0.00003424,0.02802795){\color[rgb]{0.32156863,0.31764706,0.30588235}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}A throw of 6 earns a bonus throw of 2, so this turn produced 6 and 2 --- and both take a\end{tabular}}}}%
+    \put(-0.00003424,0.00363789){\color[rgb]{0.32156863,0.31764706,0.30588235}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}piece off the board via the centre. The player is free to assign either value to either piece.\end{tabular}}}}%
   \end{picture}%
 \endgroup%

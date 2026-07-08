@@ -1,0 +1,65 @@
+%% Creator: Inkscape 1.2.2 (b0a8486541, 2022-12-01), www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'rule16_case4_forfeited_svg-tex.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{450.20031738bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.52063046)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0.24908427,0.50375321){\color[rgb]{0.04313725,0.04313725,0.04313725}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Before\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{rule16_case4_forfeited_svg-tex.pdf}}%
+    \put(0.79883955,0.50375321){\color[rgb]{0.04313725,0.04313725,0.04313725}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}After\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{rule16_case4_forfeited_svg-tex.pdf}}%
+    \put(-0.00080449,0.03063049){\color[rgb]{0.32156863,0.31764706,0.30588235}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}No different piece can use the 5, so option (a) is unavailable. The player need not take\end{tabular}}}}%
+    \put(-0.00080449,0.00397569){\color[rgb]{0.32156863,0.31764706,0.30588235}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}option (b) either --- they may forfeit the 5 and end their turn.\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{rule16_case4_forfeited_svg-tex.pdf}}%
+    \put(0.93211355,0.19389115){\color[rgb]{0.65882353,0.65882353,0.64313725}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}forfeited\end{tabular}}}}%
+  \end{picture}%
+\endgroup%

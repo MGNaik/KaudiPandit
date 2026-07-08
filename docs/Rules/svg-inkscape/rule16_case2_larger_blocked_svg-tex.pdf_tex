@@ -1,0 +1,65 @@
+%% Creator: Inkscape 1.2.2 (b0a8486541, 2022-12-01), www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'rule16_case2_larger_blocked_svg-tex.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{450.36877441bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.52043573)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0.24936514,0.50356479){\color[rgb]{0.04313725,0.04313725,0.04313725}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Before\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{rule16_case2_larger_blocked_svg-tex.pdf}}%
+    \put(0.79891479,0.50356479){\color[rgb]{0.04313725,0.04313725,0.04313725}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}After\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{rule16_case2_larger_blocked_svg-tex.pdf}}%
+    \put(-0.00043015,0.03061903){\color[rgb]{0.32156863,0.31764706,0.30588235}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}This turn produced 5. The piece is 2 away, so the 5 overshoots the centre ---\end{tabular}}}}%
+    \put(-0.00043015,0.0039742){\color[rgb]{0.32156863,0.31764706,0.30588235}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}it simply cannot be used to move this piece there.\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{rule16_case2_larger_blocked_svg-tex.pdf}}%
+    \put(0.93213895,0.19381862){\color[rgb]{0.65882353,0.65882353,0.64313725}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}blocked\end{tabular}}}}%
+  \end{picture}%
+\endgroup%
