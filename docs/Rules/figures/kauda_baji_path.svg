@@ -5,8 +5,7 @@
       <path d="M2 1L8 5L2 9" fill="none" stroke="#E24B4A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
     </marker>
     <g id="piece">
-      <circle cx="0" cy="0" r="9" fill="white" stroke="#1C5CAB" stroke-width="1.2"/>
-      <path d="M 6,0 C 6,4 2,7 -2,5.5 C -6,4 -7,-1 -4,-4.5 C -1,-7 3,-7 5,-4.5 C 6.5,-2.5 6,0.5 4,2 C 2,3.5 0,3 0,0" fill="none" stroke="#2A78D6" stroke-width="1.6" stroke-linecap="round"/>
+      <circle cx="0" cy="0" r="9" fill="#2A78D6" stroke="#1C5CAB" stroke-width="1.2"/>
     </g>
   </defs>
   

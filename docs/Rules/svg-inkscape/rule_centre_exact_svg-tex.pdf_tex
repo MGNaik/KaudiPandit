@@ -1,0 +1,81 @@
+%% Creator: Inkscape 1.2.2 (b0a8486541, 2022-12-01), www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'rule_centre_exact_svg-tex.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{496.72595215bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,1.10494488)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0.0052846,1.09072186){\color[rgb]{0.32156863,0.31764706,0.30588235}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}An exact throw lands the piece on the centre\end{tabular}}}}%
+    \put(0.23176764,1.04542526){\color[rgb]{0.04313725,0.04313725,0.04313725}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Before\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{rule_centre_exact_svg-tex.pdf}}%
+    \put(0.4431518,0.72230946){\color[rgb]{0.32156863,0.31764706,0.30588235}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}2\end{tabular}}}}%
+    \put(0.73003031,1.04542526){\color[rgb]{0.04313725,0.04313725,0.04313725}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}After\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{rule_centre_exact_svg-tex.pdf}}%
+    \put(0.97161221,0.901986){\color[rgb]{0.16470588,0.47058824,0.83921569}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}2\end{tabular}}}}%
+    \put(0.97161221,1.04542526){\color[rgb]{0.32156863,0.31764706,0.30588235}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}This turn\end{tabular}}}}%
+    \put(0.0052846,0.61661738){\color[rgb]{0.32156863,0.31764706,0.30588235}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}This turn produced 2 (not a 6 or 12, so no bonus throw follows). The piece is exactly\end{tabular}}}}%
+    \put(0.0052846,0.59245919){\color[rgb]{0.32156863,0.31764706,0.30588235}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}2 away, so the 2 lands it precisely on the centre.\end{tabular}}}}%
+    \put(0.0052846,0.50186598){\color[rgb]{0.32156863,0.31764706,0.30588235}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Two pieces close enough: the player chooses which value goes where\end{tabular}}}}%
+    \put(0.23176764,0.45656937){\color[rgb]{0.04313725,0.04313725,0.04313725}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Before\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{rule_centre_exact_svg-tex.pdf}}%
+    \put(0.4431518,0.13345358){\color[rgb]{0.32156863,0.31764706,0.30588235}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}2\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{rule_centre_exact_svg-tex.pdf}}%
+    \put(0.02038347,0.37503548){\color[rgb]{0.32156863,0.31764706,0.30588235}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}6\end{tabular}}}}%
+    \put(0.73003031,0.45656937){\color[rgb]{0.04313725,0.04313725,0.04313725}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}After\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{rule_centre_exact_svg-tex.pdf}}%
+    \put(0.97161221,0.31313012){\color[rgb]{0.16470588,0.47058824,0.83921569}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}6\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{rule_centre_exact_svg-tex.pdf}}%
+    \put(0.97161221,0.25877419){\color[rgb]{0.16470588,0.47058824,0.83921569}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}2\end{tabular}}}}%
+    \put(0.97161221,0.45656937){\color[rgb]{0.32156863,0.31764706,0.30588235}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}This turn\end{tabular}}}}%
+    \put(0.0052846,0.0277615){\color[rgb]{0.32156863,0.31764706,0.30588235}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}A throw of 6 earns a bonus throw of 2, so this turn produced 6 and 2 --- and both land a\end{tabular}}}}%
+    \put(0.0052846,0.00360331){\color[rgb]{0.32156863,0.31764706,0.30588235}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}piece exactly on the centre. The player is free to assign either value to either piece.\end{tabular}}}}%
+  \end{picture}%
+\endgroup%

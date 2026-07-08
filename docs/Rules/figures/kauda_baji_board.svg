@@ -6,20 +6,16 @@
       <path d="M2 1L8 5L2 9" fill="none" stroke="#E24B4A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
     </marker>
     <g id="piece-blue">
-      <circle cx="0" cy="0" r="9" fill="white" stroke="#1C5CAB" stroke-width="1.2"/>
-      <path d="M 6,0 C 6,4 2,7 -2,5.5 C -6,4 -7,-1 -4,-4.5 C -1,-7 3,-7 5,-4.5 C 6.5,-2.5 6,0.5 4,2 C 2,3.5 0,3 0,0" fill="none" stroke="#2A78D6" stroke-width="1.6" stroke-linecap="round"/>
+      <circle cx="0" cy="0" r="9" fill="#2A78D6" stroke="#1C5CAB" stroke-width="1.2"/>
     </g>
-    <g id="piece-aqua">
-      <circle cx="0" cy="0" r="9" fill="white" stroke="#137A55" stroke-width="1.2"/>
-      <path d="M 6,0 C 6,4 2,7 -2,5.5 C -6,4 -7,-1 -4,-4.5 C -1,-7 3,-7 5,-4.5 C 6.5,-2.5 6,0.5 4,2 C 2,3.5 0,3 0,0" fill="none" stroke="#1BAF7A" stroke-width="1.6" stroke-linecap="round"/>
+    <g id="piece-purple">
+      <circle cx="0" cy="0" r="9" fill="#A855F7" stroke="#6B21A8" stroke-width="1.2"/>
     </g>
     <g id="piece-yellow">
-      <circle cx="0" cy="0" r="9" fill="white" stroke="#A67100" stroke-width="1.2"/>
-      <path d="M 6,0 C 6,4 2,7 -2,5.5 C -6,4 -7,-1 -4,-4.5 C -1,-7 3,-7 5,-4.5 C 6.5,-2.5 6,0.5 4,2 C 2,3.5 0,3 0,0" fill="none" stroke="#EDA100" stroke-width="1.6" stroke-linecap="round"/>
+      <circle cx="0" cy="0" r="9" fill="#EDA100" stroke="#A67100" stroke-width="1.2"/>
     </g>
     <g id="piece-green">
-      <circle cx="0" cy="0" r="9" fill="white" stroke="#005C00" stroke-width="1.2"/>
-      <path d="M 6,0 C 6,4 2,7 -2,5.5 C -6,4 -7,-1 -4,-4.5 C -1,-7 3,-7 5,-4.5 C 6.5,-2.5 6,0.5 4,2 C 2,3.5 0,3 0,0" fill="none" stroke="#008300" stroke-width="1.6" stroke-linecap="round"/>
+      <circle cx="0" cy="0" r="9" fill="#008300" stroke="#005C00" stroke-width="1.2"/>
     </g>
   </defs>
   
@@ -136,12 +132,12 @@
   <use xlink:href="#piece-blue" href="#piece-blue" x="333" y="597"/>
 
   <!-- TOP player (aqua) -->
-  <use xlink:href="#piece-aqua" href="#piece-aqua" x="318" y="78"/>
-  <use xlink:href="#piece-aqua" href="#piece-aqua" x="345" y="73"/>
-  <use xlink:href="#piece-aqua" href="#piece-aqua" x="366" y="82"/>
-  <use xlink:href="#piece-aqua" href="#piece-aqua" x="312" y="98"/>
-  <use xlink:href="#piece-aqua" href="#piece-aqua" x="352" y="103"/>
-  <use xlink:href="#piece-aqua" href="#piece-aqua" x="333" y="117"/>
+  <use xlink:href="#piece-purple" href="#piece-purple" x="318" y="78"/>
+  <use xlink:href="#piece-purple" href="#piece-purple" x="345" y="73"/>
+  <use xlink:href="#piece-purple" href="#piece-purple" x="366" y="82"/>
+  <use xlink:href="#piece-purple" href="#piece-purple" x="312" y="98"/>
+  <use xlink:href="#piece-purple" href="#piece-purple" x="352" y="103"/>
+  <use xlink:href="#piece-purple" href="#piece-purple" x="333" y="117"/>
 
   <!-- RIGHT player (yellow) -->
   <use xlink:href="#piece-yellow" href="#piece-yellow" x="558" y="318"/>
