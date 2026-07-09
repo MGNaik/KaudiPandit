@@ -50,13 +50,13 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.35301151)%
+  \begin{picture}(1,0.21867309)%
     \lineheight{1}%
     \setlength\tabcolsep{0pt}%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{kaudi_throw_examples_svg-tex.pdf}}%
-    \put(0.37428176,0.31457579){\color[rgb]{0.04313725,0.04313725,0.04313725}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}3 mouth-up → value 3\end{tabular}}}}%
+    \put(0.37428176,0.18023738){\color[rgb]{0.04313725,0.04313725,0.04313725}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}3 mouth-up → value 3\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=2]{kaudi_throw_examples_svg-tex.pdf}}%
-    \put(0.37428176,0.16531089){\color[rgb]{0.04313725,0.04313725,0.04313725}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}6 mouth-up → value 6 (bonus: throw again)\end{tabular}}}}%
+    \put(0.37428176,0.09814168){\color[rgb]{0.04313725,0.04313725,0.04313725}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}6 mouth-up → value 6 (bonus: throw again)\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=3]{kaudi_throw_examples_svg-tex.pdf}}%
     \put(0.37428176,0.01604598){\color[rgb]{0.04313725,0.04313725,0.04313725}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}0 mouth-up → value 12 (bonus: throw again)\end{tabular}}}}%
   \end{picture}%

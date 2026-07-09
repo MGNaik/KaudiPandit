@@ -27,7 +27,7 @@
 
 \section*{Why this document}
 
-I'm currently working on a hobby project to build an AI agent that plays Kauda Baji.
+I'm currently working on a learning project to build an AI agent that plays Kauda Baji called Kaudi-Pandit.
 The idea is to build a complete model of the game in code, then design AI agents that can play it.
 In the future, time permitting, there may even be a robot that plays the game with you in real life.
 
@@ -71,7 +71,8 @@ Here are the terms I will use in this document, and their meanings.
 
 \end{description}
 
-\section*{The board and pieces}
+\newpage
+\section*{Overview of the Game}
 
 \begin{center}
 \begin{minipage}{0.45\textwidth}
@@ -97,6 +98,10 @@ Every player's pieces start on the same square: the crossed square in the
 middle of that player's own edge. This is the player's \textbf{starting
 square}. From there, pieces travel around and inward, and all four players
 finish on the single square at the very centre of the board.
+
+Along the way, a player may also use their pieces to kill other players'
+pieces, sending them back to their starting square --- which can increase
+their own chances of winning.
 
 The objective of the game is to get all six pieces from the starting square to the centre square. The first player to do so wins.
 
@@ -124,6 +129,7 @@ who weren't tied are not involved in the re-throw.
 2. Red and Blue are tied for highest and throw again, just the two of them,
 until one beats the other.
 
+\newpage
 \ruletitle{2}{Throwing the kaudis}
 
 A turn begins with a throw of all six kaudis. The value of a throw is the
@@ -157,9 +163,16 @@ single piece (added together), or spread across several different pieces,
 in any combination the player chooses. 
 
 However, a single throw value cannot be split between two pieces.
-A throw of 6 and 3 in the same turn, for example, can move one piece 9 
-squares in total, or two different pieces 6 and 3 squares each, 
+A throw of 6 and 3 in the same turn, for example, can move one piece 9
+squares in total, or two different pieces 6 and 3 squares each,
 but the 6 and the 3 can never themselves be divided further.
+
+\begin{center}
+  \includesvg[width=0.38\textwidth]{figures/rule3_throw_moves}\\[1mm]
+  {\small A turn produced 6 and 3. The player spends the 6 on one piece and the 3 on
+  another, each advancing along the route --- or could have moved a single piece
+  9 squares in total.}
+\end{center}
 
 Throws that can legally be used by any of the player's pieces must be used, there
 is no option to forfeit or skip other than two special cases in Rule 9 and Rule 16.
@@ -178,6 +191,7 @@ pieces.
 The whole 5 must go to a single piece; there's nothing to spread, since
 there's only the one value.
 
+\newpage
 \ruletitle{4}{The movement path: anticlockwise out, clockwise in, three arrows to the centre}
 
 Every piece follows the same route from its starting square to the centre.
@@ -281,7 +295,6 @@ and be killed as a single unit until it next reaches a safe square.
   \includesvg[width=0.8357\textwidth]{figures/tuple_dissolve}
 \end{center}
 
-\newpage
 \ruletitle{9}{Moving a tuple: the divide rule}
 
 A tuple of size $n$ can only be moved using a throw value that $n$ divides
@@ -295,6 +308,12 @@ it advances by the throw value \textbf{divided by} its size. A 2-tuple
 moved with a throw of 6 advances 3 squares (6~$\div$~2), not 6; a 4-tuple
 moved with a throw of 12 advances 3 squares (12~$\div$~4). The bigger the
 tuple, the less distance the same throw actually covers.
+
+\begin{center}
+  \includesvg[width=0.38\textwidth]{figures/rule9_divide_board}\\[1mm]
+  {\small A throw of 6 moves this 2-tuple only 3 squares along the route (6~$\div$~2) ---
+  the whole tuple advances together, covering half the distance a single piece would.}
+\end{center}
 
 If the player has no usable throw values under this rule, they forfeit the
 throw value and their turn is over.
@@ -326,6 +345,7 @@ and leaving a shared safe square kills nothing.
   \includesvg[width=0.75\textwidth]{figures/rule4_safe_square}
 \end{center}
 
+\newpage
 \ruletitle{11}{Landing on an opponent: equal-or-bigger kills, smaller coexists}
 
 If your tuple lands on a square holding an opponent's tuple, and your tuple is
@@ -435,26 +455,62 @@ more} other opponents' tuples and moves away, it kills nobody on exit
 either. Exit kills (Rule 12) only ever happen when exactly one opponent's
 tuple is present.
 
-\newpage
 \ruletitle{16}{Reaching the centre: exact throw required}
 
 Sending a piece or tuple on to the centre square, and thus off the board,
 requires an \textbf{exact} throw value which lands the piece or tuple onto
 the centre square.
 
+A throw of 6 or 12 always earns an immediate extra throw (Rule 2), even
+when that 6 or 12 itself overshoots and can't bring a piece home. A later
+throw in that same chain --- alone or summed with earlier ones --- can
+still complete the piece's journey if it lands exactly; if instead it falls
+short, it is not forced onto this piece and follows the same cases below.
+
 As an outcome of this rule, a number of notable cases arise:
 
 \begin{enumerate}[leftmargin=2em]
-  \item \textbf{Player throws a value smaller than the required value to land the piece or tuple on the centre square} 
+  \item \textbf{Player throws the exact value required to land the piece or tuple on the centre square}
+
+    The piece or tuple lands precisely on the centre and is taken off the
+    board --- its journey is complete.
+
+    \emph{Example:} A piece is exactly 2 squares away from the centre. The
+    player throws 2 --- the 2 lands the piece precisely on the centre,
+    taking it off the board.
+
+    \begin{center}
+      \includesvg[width=0.38\textwidth]{figures/rule16_case0_exact}
+    \end{center}
+
+    \emph{Example:} One piece is 2 away and another is 6 away. The player
+    throws 6, earning a bonus throw, and the bonus comes up 2 --- the
+    values can be used to land both pieces exactly on the centre, and the
+    player is free to assign either value to either piece.
+
+    \begin{center}
+      \includesvg[width=0.38\textwidth]{figures/rule16_case0_choice}
+    \end{center}
+
+    \emph{Example:} A single piece is 4 away. The player throws 6 --- too
+    big to land this piece --- but the 6 earns a bonus throw (Rule 2), and
+    the bonus comes up 4. The 4 lands the piece exactly on the centre,
+    taking it home; the 6 itself is spent as the cases below describe.
+
+    \begin{center}
+      \includesvg[width=0.38\textwidth]{figures/rule16_case0_bonus}
+    \end{center}
+
+  \item \textbf{Player throws a value smaller than the required value to land the piece or tuple on the centre square}
   
     In this case, the player doesn't have the roll value to land the piece/tuple on the centre.
     However, the lesser move is still an ordinary, legal move, and must be used as per Rule 3. 
 
     \emph{Example:} A single piece is 4 squares away from the centre and the player has no other pieces on the board. 
     A throw of 3 falls short of landing the piece onto the centre square, but the move is still legal. 
-    Since no other piece on the board can use that 3, this piece must advance with it.
+    Since no other piece on the board can use that 3, this piece must be advanced with it.
     \begin{center}
-      \includesvg[width=0.75\textwidth]{figures/rule16_case1_smaller}
+      \includesvg[width=0.38\textwidth]{figures/rule16_case1_smaller}
     \end{center}
 
     \emph{Example:} A 2-tuple is 5 squares away from the centre and a single piece is 8 squares away.
@@ -464,11 +520,10 @@ As an outcome of this rule, a number of notable cases arise:
     value and decide which of their pieces or tuples to move.
 
     \begin{center}
-      \includesvg[width=0.75\textwidth]{figures/rule16_case1b_tuple_short}
+      \includesvg[width=0.38\textwidth]{figures/rule16_case1b_tuple_short}
     \end{center}
 
 
-  \newpage
   \item \textbf{Player throws a value larger than the required value to land the piece or tuple on the centre square}
 
     In this case, the player has a roll value that is larger than that required to land the piece or tuple
@@ -478,64 +533,55 @@ As an outcome of this rule, a number of notable cases arise:
     whichever of them are available --- neither is forced over the other:
 
     \begin{enumerate}[label=(\alph*)]
-      \item If a different one of the player's pieces or tuples can legally
-        use the throw value without overshooting, move that piece or tuple
-        with it instead.
       \item Move the piece or tuple around the inner band again instead of
         turning in to the centre square, as per Rule 4. This is always a
         legal, ordinary move, whether or not any other piece can use the
         value.
+      \item If a different one of the player's pieces or tuples can legally
+        use the throw value without overshooting, move that piece or tuple
+        with it instead.
     \end{enumerate}
 
-    If no different piece or tuple can use the value --- so option (a)
-    isn't available --- the player is not obliged to take option (b)
+    If no different piece or tuple can use the value --- so option (b)
+    isn't available --- the player is not obliged to take option (a)
     either, and may instead forfeit the throw value and finish their turn.
 
     \emph{Example:} A piece is 2 away. A throw of 5 is too big to land it
     --- it simply cannot be used to move this piece onto the centre.
 
     \begin{center}
-      \includesvg[width=0.75\textwidth]{figures/rule16_case2_larger_blocked}
+      \includesvg[width=0.38\textwidth]{figures/rule16_case2_larger_blocked}
     \end{center}
 
-    \emph{Example --- option (a):} With that same throw of 5, if a
-    different piece elsewhere on the board can legally move 5 squares, the
-    player may choose to use it there instead.
+    \emph{Example --- option (a):} The player may spend the 5 on the
+    2-away piece itself: declining the arrow (Rule 4), it loops around its
+    inner band and ends up 5 away from the centre, waiting for an exact
+    value on a later turn.
 
     \begin{center}
-      \includesvg[width=0.75\textwidth]{figures/rule16_case3_different_piece}
+      \includesvg[width=0.38\textwidth]{figures/rule16_case2b_loop}
     \end{center}
 
-    \emph{Example --- option (b):} Alternatively, the player may spend the
-    5 on the 2-away piece itself: declining the arrow (Rule 4), it loops
-    around its inner band and ends up 5 away from the centre, waiting for
-    an exact value on a later turn.
+    \emph{Example --- option (b):} Alternatively, with that same throw of
+    5, the player also has a second piece out on the first inner band.
+    That piece can legally move 5 squares without overshooting --- turning
+    in at the second arrow along the way --- so the player may choose to
+    move it instead; the 2-away piece is simply left waiting.
 
     \begin{center}
-      \includesvg[width=0.75\textwidth]{figures/rule16_case2b_loop}
+      \includesvg[width=0.38\textwidth]{figures/rule16_case3_different_piece}
     \end{center}
 
     \emph{Example --- forfeit:} If instead no different piece anywhere can
-    use the 5 (option (a) unavailable), the player isn't obliged to take
-    option (b) either --- they may simply forfeit the value and end their
+    use the 5 (option (b) unavailable), the player isn't obliged to take
+    option (a) either --- they may simply forfeit the value and end their
     turn, the same way values are lost when a triple bonus forfeits a turn
     (Rule 2).
 
     \begin{center}
-      \includesvg[width=0.75\textwidth]{figures/rule16_case4_forfeited}
+      \includesvg[width=0.38\textwidth]{figures/rule16_case4_forfeited}
     \end{center}
 \end{enumerate}
-
-A throw of 6 or 12 always earns an immediate extra throw (Rule 2), even
-when that 6 or 12 itself overshoots and can't bring a piece home. A later
-throw in that same chain --- alone or summed with earlier ones --- can
-still complete the piece's journey if it lands exactly; if instead it falls
-short, it is not forced onto this piece and follows the same cases above.
-
-
-\begin{center}
-  \includesvg[width=0.75\textwidth]{figures/rule_centre_exact}
-\end{center}
 
 
 

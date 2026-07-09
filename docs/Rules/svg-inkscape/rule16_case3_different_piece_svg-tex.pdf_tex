@@ -38,7 +38,7 @@
   \newcommand*\fsize{\dimexpr\f@size pt\relax}%
   \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{382.4664917bp}%
+    \setlength{\unitlength}{455.25bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -50,16 +50,9 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.65065778)%
+  \begin{picture}(1,1)%
     \lineheight{1}%
     \setlength\tabcolsep{0pt}%
-    \put(0.29307533,0.63218572){\color[rgb]{0.32156863,0.31764706,0.30588235}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}A different piece, elsewhere on the board\end{tabular}}}}%
-    \put(0.44995181,0.5929666){\color[rgb]{0.04313725,0.04313725,0.04313725}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Before\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{rule16_case3_different_piece_svg-tex.pdf}}%
-    \put(0.52839006,0.35765187){\color[rgb]{0.16470588,0.47058824,0.83921569}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}throw 5\end{tabular}}}}%
-    \put(0.44995181,0.27921363){\color[rgb]{0.04313725,0.04313725,0.04313725}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}After\end{tabular}}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=2]{rule16_case3_different_piece_svg-tex.pdf}}%
-    \put(-0.00106809,0.03605507){\color[rgb]{0.32156863,0.31764706,0.30588235}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Option (a): the 2-away piece near the centre cannot use the 5 to land, but this piece can\end{tabular}}}}%
-    \put(-0.00106809,0.00467977){\color[rgb]{0.32156863,0.31764706,0.30588235}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}move 5 squares along its ordinary path --- the player may choose to send the 5 here.\end{tabular}}}}%
   \end{picture}%
 \endgroup%

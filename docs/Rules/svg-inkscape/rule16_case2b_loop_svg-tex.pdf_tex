@@ -38,7 +38,7 @@
   \newcommand*\fsize{\dimexpr\f@size pt\relax}%
   \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{450.1539917bp}%
+    \setlength{\unitlength}{455.25bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -50,15 +50,9 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.52068404)%
+  \begin{picture}(1,1)%
     \lineheight{1}%
     \setlength\tabcolsep{0pt}%
-    \put(0.24900699,0.50380505){\color[rgb]{0.04313725,0.04313725,0.04313725}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Before\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{rule16_case2b_loop_svg-tex.pdf}}%
-    \put(0.79881884,0.50380505){\color[rgb]{0.04313725,0.04313725,0.04313725}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}After\end{tabular}}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=2]{rule16_case2b_loop_svg-tex.pdf}}%
-    \put(-0.00090749,0.03063364){\color[rgb]{0.32156863,0.31764706,0.30588235}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Option (b): the 2-away piece spends the 5 on itself --- declining the arrow (Rule 4), it\end{tabular}}}}%
-    \put(-0.00090749,0.0039761){\color[rgb]{0.32156863,0.31764706,0.30588235}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}loops around its inner band and ends up 5 away, waiting for an exact value later.\end{tabular}}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=3]{rule16_case2b_loop_svg-tex.pdf}}%
   \end{picture}%
 \endgroup%
