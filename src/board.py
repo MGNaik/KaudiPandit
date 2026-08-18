@@ -1,4 +1,4 @@
-from docs.Rules.src.types import Square, Position
+from src.types import Square, Position
 class Board: 
 
     safe_positions = {Position(0, 0), Position(0, 3), Position(0, 6),

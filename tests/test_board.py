@@ -1,5 +1,5 @@
-from docs.Rules.src.board import Board
-from docs.Rules.src.types import Position, Square
+from src.board import Board
+from src.types import Position, Square
 
 safe_positions = {Position(0, 0), Position(0, 3), Position(0, 6),
                       Position(2, 2), Position(2, 4),
