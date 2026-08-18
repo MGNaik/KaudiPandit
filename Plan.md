@@ -68,10 +68,8 @@ optimal control in the physical projects.
   instantiated; `Player.piece_tuples` is always `[]`)
 - `src/game.py`, `src/strategy.py` — empty files, no content yet
 
-**Broken:**
-- `src/board.py`, `src/players.py`, and every file in `tests/` import from
-  `docs.Rules.src.*`, which doesn't exist. Should be `src.*`. Nothing
-  imports, `pytest` fails at collection for all four test files.
+Imports are fixed and `pytest` passes all 29 tests clean (verified
+2026-08-18) — see item 0 below.
 
 ## Domain model — target vs actual
 
@@ -92,8 +90,10 @@ Key architectural conclusions reached (target, to be built toward):
 **Actual current code** (`src/pieces.py`, `src/players.py`) is still the
 earlier mutable OO style: `Piece` and `PieceTuple` are plain mutable classes,
 and `Piece.owner` holds a live `Player` object reference rather than a
-`seat_id`. The refactor toward the value-object model above is tracked as
-build sequence step 3 below.
+`seat_id`. This is intentionally fine for Phase 1/2 below (random play,
+heuristic strategy — neither branches, so mutation is safe). The refactor
+toward the value-object model above is tracked in build sequence Phase 3,
+gated behind starting search-based agents.
 
 ## Game rules — settled
 
@@ -127,48 +127,109 @@ Full rule text (all 16 rules) lives in `docs/Rules/Rules.tex`.
 
 ## 0. Immediate blocker
 
-- [ ] Fix the `docs.Rules.src.*` → `src.*` import paths (`src/board.py`,
+- [x] Fix the `docs.Rules.src.*` → `src.*` import paths (`src/board.py`,
       `src/players.py`, all of `tests/`) so the existing test suite runs
-      again. Nothing below is meaningfully gradeable until this is fixed.
+      again. **Done (2026-08-18)** — `pytest` collects and passes all 29
+      tests clean.
 
 ## Open design questions
 
-- [ ] **Kacha/paku (ripeness): per-piece or per-tuple?** Determines whether
-      `Piece` survives as a class or collapses into tuple counts. Resolve
-      before building the move enumerator. Needs more thinking (2026-08-18).
+- [x] **Kacha/paku (ripeness): per-piece or per-tuple?** — **Resolved
+      (2026-08-18): it's a per-tuple concept, not per-piece.** "Kacha" is a
+      piece not currently bound into a formed tuple (Rule 7); "paku" is a
+      formed tuple, which per Rule 8 must move and be killed as one unit
+      until it next reaches a safe square. This state doesn't need its own
+      stored field — it falls out of the representation directly: a lone
+      piece is always kacha (it's a `PieceTuple` of size 1), and a group is
+      paku for as long as it's represented as one merged `PieceTuple` of
+      size ≥ 2 rather than several separate size-1 tuples sharing a square.
+      Confirms `Piece` can safely collapse into tuple counts — no individual
+      per-piece identity needed to represent kacha/paku status.
 - [x] Do killed pieces return as singles or as the tuple they were? —
       **Resolved: singles** (decided 2026-08-18). Intentionally left implicit
       in `Rules.tex` (human-facing doc) — but the implementation must apply
-      it explicitly. See build sequence step 2/3: kill resolution must split
-      a killed tuple into `size` individual 1-tuples at the owner's starting
-      square, not preserve it as an intact tuple.
+      it explicitly. See build sequence Phase 1 (move enumerator): kill
+      resolution must split a killed tuple into `size` individual 1-tuples
+      at the owner's starting square, not preserve it as an intact tuple.
 
 (Value-network output shape dropped for now — it's a later-stage question,
-resurfaces at build-sequence step 8, state encoding.)
+resurfaces at build-sequence Phase 4, state encoding.)
 
 ## Build sequence
 
-- [ ] **1. Resolve kacha/paku** — per-piece vs per-tuple (see open questions)
-- [ ] **2. Move enumerator** — possible-moves → legal-action assembly →
-      captures. Kill resolution must explicitly split a killed tuple into
-      `size` singles at the owner's starting square (decided open question
-      above) — don't let it silently fall out as "return the tuple intact."
-- [ ] **3. Domain model refactor** — `Piece`/`PieceTuple`/`Player` currently
-      mutable OO classes with object references (`Piece.owner` holds a live
-      `Player`, not a `seat_id`). Target is the immutable value-object model:
-      `PieceTuple` as a frozen `(owner: seat_id, position: Square, size: int)`,
-      board as the real state unit, piece IDs excluded from state
-      equality/move generation. Do this alongside step 2, since the
-      enumerator's shape depends on it.
-- [ ] **4. `Projector` → game loop** — `src/game.py`
-- [ ] **5. Strategy hierarchy → headless play** — `src/strategy.py`
-- [ ] **6. Visualiser** — HTML/SVG, blog-embeddable
-- [ ] **7. `HeuristicStrategy`** — domain knowledge made explicit; benchmark
-      for learned agents
-- [ ] **8. State encoding** — state object → fixed numeric vector for NN
-      input
-- [ ] **9. Self-play training** — Colab (T4-class GPU); measure CPU speed
-      first, batch to make the GPU worthwhile
+Grouped by dependency phase, not a strict task order within a phase (adapted
+2026-08-18). The key insight driving the grouping: the immutable value-object
+refactor and `Projector` are motivated specifically by tree search needing to
+generate and discard many hypothetical branch states cheaply and safely —
+plain random play and heuristic play never branch, so neither needs it. That
+pushes the refactor to a single later gate instead of upfront.
+
+- [x] **Resolve kacha/paku** — per-tuple, not per-piece; no dedicated state
+      field needed (see open questions)
+
+**Phase 1 — random play** (current mutable OO model; no refactor needed)
+- [ ] Move enumerator — given a turn's banked throw values (Rules 2/3/6
+      chaining: bonus throws from 6s/12s and from kills) and the current
+      board, produce the full set of legal (value → piece/tuple)
+      assignments, not just single-value reachability. Includes capture
+      resolution (Rules 11–15) and divide-rule filtering (Rule 9). Kill
+      resolution must explicitly split a killed tuple into `size` singles
+      at the owner's starting square (resolved open question above) — don't
+      let it silently fall out as "return the tuple intact."
+- [ ] Single-step apply — `apply(state, move) -> next_state`, one move, no
+      recursion or branch management. Mutation on the current model is fine
+      here; this is not `Projector`.
+- [ ] Game loop (`src/game.py`) — initiate, turn cycle (whose turn, throw,
+      enumerate, apply, kill/bonus-throw chaining, completion check), win
+      condition.
+- [ ] Trivial placeholder strategy (random, or first-legal-choice) — just
+      enough decision-making to drive the loop through a full game; not the
+      real strategy hierarchy.
+
+**Phase 1 (parallel) — visualiser**
+- [ ] Visualiser — build alongside Phase 1 so random games can be watched
+      and sanity-checked as the loop is developed, not only after.
+      **Approach locked in (2026-08-18): CSS 3D-tilt / pseudo-isometric
+      board** — plain SVG/HTML/CSS, no 3D engine. A `perspective` +
+      `rotateX` transform tilts the board into an angled tabletop view, with
+      `box-shadow` layering to fake piece height and tuple stacking; motion
+      via CSS transitions. Reuses the visual style already established by
+      the ~25 hand-done SVG figures in `docs/Rules/figures/`, stays
+      blog-embeddable, and needs no new toolchain. True 3D (Three.js/WebGL)
+      stayed off the table for now — real scope-inflation risk for a v1 —
+      but is an explicit stretch goal once the game loop and this version
+      are proven out.
+
+**Phase 2 — heuristic strategy** (still no refactor needed)
+- [ ] `HeuristicStrategy` (`src/strategy.py`) — domain knowledge made
+      explicit (e.g. prefer kills, avoid exposure). Plugs into the same
+      enumerator output as the placeholder strategy; still no search, still
+      fine on the current mutable model.
+
+**Gate — assess before search-based agents**
+- [ ] Assess whether the mutable → immutable refactor is actually needed
+      before starting expectimax. Expected answer: yes, for the branching
+      reason above — but decide this with real move-enumerator/game-loop
+      code in hand rather than upfront.
+
+**Phase 3 — search-based agents**
+- [ ] Domain model refactor — `Piece`/`PieceTuple`/`Player` (currently
+      mutable OO classes; `Piece.owner` holds a live `Player`, not a
+      `seat_id`) → immutable value-object model: `PieceTuple` as a frozen
+      `(owner: seat_id, position: Square, size: int)`, board as the real
+      state unit, piece IDs excluded from state equality/move generation.
+- [ ] `Projector` — the recursive move-application system that lets
+      expectimax explore many hypothetical future states per decision,
+      built on the immutable model's cheap structural sharing.
+- [ ] Expectimax agent using `Projector` — one ply of own moves plus
+      chance-node weighting by kaudi bias, backed by a learned
+      seat-conditioned value function.
+
+**Phase 4 — learning**
+- [ ] State encoding — state object → fixed numeric vector for NN input
+      (feeds the value function expectimax queries).
+- [ ] Self-play training — Colab (T4-class GPU); measure CPU speed first,
+      batch to make the GPU worthwhile.
 
 ## AI architecture (planned)
 

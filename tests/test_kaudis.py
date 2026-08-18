@@ -1,4 +1,4 @@
-from Rules.src.kaudis import KaudiSet, Kaudi, KaudiState
+from src.kaudis import KaudiSet, Kaudi, KaudiState
 
 def test_kaudi_roll():
     test_kaudi_1 = Kaudi(up_prob=1.0)

@@ -1,5 +1,6 @@
 from enum import Enum
-from src.types import Position, rotate_ccw, rotate_ccw_path, Piece
+from src.types import Position, rotate_ccw, rotate_ccw_path 
+from src.pieces import Piece
 
 
 
